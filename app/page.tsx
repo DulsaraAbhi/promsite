@@ -267,7 +267,7 @@ export default function Home() {
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg text-center">
             <Image
-              src="/dulsara.JPG"
+              src="/dulsara(Small).jpg"
               alt="Team Member"
               width={100}
               height={100}
@@ -371,8 +371,8 @@ export default function Home() {
         <div className="max-w-5xl mx-auto text-center">
         <p className="text-lg text-gray-600 ">
             Mobile: <a href="tel:+15551234567" className="text-black-600 hover:underline text-center">+94000000000000</a>
-        </p>
-      </div>
+          </p>
+        </div>
         <div className="max-w-5xl mx-auto text-center">
           <p className="text-gray-600">
             © 2025 Team LunaRest. All rights reserved.
