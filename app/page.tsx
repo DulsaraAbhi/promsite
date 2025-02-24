@@ -224,7 +224,8 @@ export default function Home() {
               className="mx-auto mb-4"
             />
             <h3 className="text-xl font-semibold text-black">Rusira Sandul</h3>
-            <p className="text-gray-400">W2051886 / 20231180</p>
+            <p className="text-gray-400">Team Leader</p>
+            <p className="text-gray-400">ML and Backend Developer</p>
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg text-center">
             <Image
@@ -235,7 +236,7 @@ export default function Home() {
               className="mx-auto mb-4"
             />
             <h3 className="text-xl font-semibold text-black">Fathima Nihla</h3>
-            <p className="text-gray-400">W2053085 / 20232264</p>
+            <p className="text-gray-400">Frontend Developer</p>
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg text-center">
             <Image
@@ -248,7 +249,7 @@ export default function Home() {
             <h3 className="text-xl font-semibold text-black">
               Dewmi Jayasundara
             </h3>
-            <p className="text-gray-400">W2053736 / 20232161</p>
+            <p className="text-gray-400">Frontend Developer</p>
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg text-center">
             <Image
@@ -261,7 +262,7 @@ export default function Home() {
             <h3 className="text-xl font-semibold text-black">
               Chalitha T. Wickramasingha
             </h3>
-            <p className="text-gray-400">W20521752 / 20231629</p>
+            <p className="text-gray-400">Frontend Developer and Marketing Analyst</p>
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg text-center">
             <Image
@@ -274,7 +275,7 @@ export default function Home() {
             <h3 className="text-xl font-semibold text-black">
               Dulsara Abeywardena
             </h3>
-            <p className="text-gray-400">W2051887 / 20231183</p>
+            <p className="text-gray-400">Backend Developer and Marketing Analyst</p>
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg text-center">
             <Image
@@ -285,7 +286,7 @@ export default function Home() {
               className="mx-auto mb-4"
             />
             <h3 className="text-xl font-semibold text-black">Lakindu Perera</h3>
-            <p className="text-gray-400">W20518695 / 20231153</p>
+            <p className="text-gray-400">Backend Developer</p>
           </div>
         </div>
       </section>
@@ -363,9 +364,9 @@ export default function Home() {
       <footer className="w-full bg-white p-6 mt-12 shadow-md">
         <div className="max-w-5xl mx-auto text-center">
           <p className="text-gray-600">
-            © 2023 Sleep Quality Platform. All rights reserved.
+            © 2025 Team LunaRest. All rights reserved.
           </p>
-          <p className="text-gray-600">Developed by the CS-40 Group.</p>
+          <p className="text-gray-600">Developed by LunaRest Group.</p>
         </div>
       </footer>
     </div>
