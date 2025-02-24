@@ -267,7 +267,7 @@ export default function Home() {
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg text-center">
             <Image
-              src="/dulsara(small).jpg"
+              src="/dula.jpg"
               alt="Team Member"
               width={100}
               height={100}
