@@ -29,7 +29,7 @@ export default function Home() {
             Contact Us
           </a>
         </nav>
-        <button className="bg-blue-600 text-white px-4 py-2 rounded">
+        <button className="bg-blue-600 text-white px-4 py-2 rounded transition hover:bg-blue-700 focus:ring-2 focus:ring-blue-400">
           Get Started
         </button>
       </header>
@@ -241,7 +241,7 @@ export default function Home() {
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg text-center">
             <Image
-              src="/Dewmi.jpg"
+              src="/Nihila.jpg"
               alt="Team Member"
               width={100}
               height={100}
@@ -267,7 +267,7 @@ export default function Home() {
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg text-center">
             <Image
-              src="/dulsara(Small).jpg"
+              src="/avatar.jpg"
               alt="Team Member"
               width={100}
               height={100}
