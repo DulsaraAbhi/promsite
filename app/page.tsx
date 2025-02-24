@@ -365,12 +365,12 @@ export default function Home() {
       <footer className="w-full bg-white p-6 mt-12 shadow-md">
       <div className="mb-4">
         <div className="max-w-5xl mx-auto text-center">
-        <p className="text-lg text-gray-600 ">
-          Email: <a href="mailto:your-email@example.com" className="text-black-600 hover:underline text-center">lunarest2024@gmail.com</a>
-        </p>
+          <p className="text-lg text-gray-600 ">
+            Email: <a href="mailto:your-email@example.com" className="text-black-600 hover:underline ">lunarest2024@gmail.com</a>
+          </p>
         <div className="max-w-5xl mx-auto text-center">
-        <p className="text-lg text-gray-600 ">
-            Mobile: <a href="tel:+15551234567" className="text-black-600 hover:underline text-center">+94000000000000</a>
+          <p className="text-lg text-gray-600 ">
+            Mobile: <a href="tel:+15551234567" className="text-black-600 hover:underline">+94000000000000</a>
           </p>
         </div>
         <div className="max-w-5xl mx-auto text-center">
