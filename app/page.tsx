@@ -240,7 +240,7 @@ export default function Home() {
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg text-center">
             <Image
-              src="/avatar.jpg"
+              src="/Dewmi.jpg"
               alt="Team Member"
               width={100}
               height={100}
@@ -266,7 +266,7 @@ export default function Home() {
           </div>
           <div className="p-6 bg-white shadow-md rounded-lg text-center">
             <Image
-              src="/dulsara.jpg"
+              src="/dulsara.JPG"
               alt="Team Member"
               width={100}
               height={100}
@@ -363,11 +363,13 @@ export default function Home() {
 
       <footer className="w-full bg-white p-6 mt-12 shadow-md">
       <div className="mb-4">
-        <p className="text-lg text-gray-600">
-          Email: <a href="mailto:your-email@example.com" className="text-blue-600 hover:underline">lunarest2024@gmail.com</a>
+        <div className="max-w-5xl mx-auto text-center">
+        <p className="text-lg text-gray-600 ">
+          Email: <a href="mailto:your-email@example.com" className="text-black-600 hover:underline">lunarest2024@gmail.com</a>
         </p>
-        <p className="text-lg text-gray-600">
-            Mobile: <a href="tel:+15551234567" className="text-blue-600 hover:underline">+94000000000000</a>
+        <div className="max-w-5xl mx-auto text-center">
+        <p className="text-lg text-gray-600 ">
+            Mobile: <a href="tel:+15551234567" className="text-black-600 hover:underline">+94000000000000</a>
         </p>
       </div>
         <div className="max-w-5xl mx-auto text-center">
