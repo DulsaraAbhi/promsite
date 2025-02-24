@@ -336,7 +336,7 @@ export default function Home() {
       <section id="contact" className="w-full max-w-5xl p-6 text-center">
         <h2 className="text-3xl text-black font-bold mb-4">Contact Us</h2>
         <p className="text-lg text-black mb-8">
-          We'd love to hear from you! Reach out with any questions or feedback.
+          We&apos;d love to hear from you! Reach out with any questions or feedback.
         </p>
         <form className="grid grid-cols-1 gap-6">
           <input
