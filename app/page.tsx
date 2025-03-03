@@ -20,12 +20,12 @@ export default function Home() {
             Features
           </a>
           <a href="#team" className="text-black hover:text-black">
-            Technologies
-          </a>
-          <a href="#research" className="text-black hover:text-black">
             Team
           </a>
           <a href="#technologies" className="text-black hover:text-black">
+            Technologies
+          </a>
+          <a href="#contact" className="text-black hover:text-black">
             Contact Us
           </a>
         </nav>
@@ -57,9 +57,10 @@ export default function Home() {
           specifically for university students. Improve your academic
           performance through better sleep habits.
         </p>
-        <button className="bg-blue-600 text-white px-6 py-3 rounded">
-          Start Your Sleep Journey
-        </button>
+        <button className="bg-blue-600 text-white px-6 py-3 rounded transition hover:bg-blue-700">
+  Start Your Sleep Journey
+</button>
+
       </main>
       <section id="features" className="w-full max-w-5xl p-6 text-center">
         <h2 className="text-3xl text-black font-bold mb-4 ">Key Features</h2>
@@ -341,25 +342,15 @@ export default function Home() {
           We&apos;d love to hear from you! Reach out with any questions or feedback.
         </p>
         <form className="grid grid-cols-1 gap-6">
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="p-4 border border-gray-300 rounded-lg"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="p-4 border border-gray-300 rounded-lg"
-          />
-          <textarea
-            placeholder="Your Message"
-            className="p-4 border border-gray-300 rounded-lg"
-            rows={4}
-          ></textarea>
-          <button className="bg-blue-600 text-white px-6 py-3 rounded">
-            Send Message
-          </button>
-        </form>
+  <input type="text" placeholder="Your Name" required className="p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400" />
+  <input type="email" placeholder="Your Email" required className="p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400" />
+  <textarea placeholder="Your Message" required className="p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400" rows={4}></textarea>
+  <button type="submit" className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
+    Send Message
+  </button>
+</form>
+
+
       </section>
 
       <footer className="w-full bg-white p-6 mt-12 shadow-md">
