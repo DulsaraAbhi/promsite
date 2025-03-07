@@ -5,8 +5,7 @@ import { KeyFeatures } from "./components/key-features";
 import { Section } from "./components/section";
 import { GradientText } from "./components/gradient-text";
 import { Button } from "./components/button";
-import Image from "next/image";
-import { motion } from "framer-motion";
+
 import { ContactSection } from "./components/contact-section";
 import { Footer } from "./components/footer";
 import { TeamMemberCard } from "./components/team-member-card";
