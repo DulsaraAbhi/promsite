@@ -1,367 +1,193 @@
+import { GlobalSpotlight } from "./components/global-spotlight";
+import { Navbar } from "./components/navbar";
+import { HeroSection } from "./components/hero-section";
+import { KeyFeatures } from "./components/key-features";
+import { Section } from "./components/section";
+import { GradientText } from "./components/gradient-text";
+import { Button } from "./components/button";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { ContactSection } from "./components/contact-section";
+import { Footer } from "./components/footer";
+import { TeamMemberCard } from "./components/team-member-card";
 
 export default function Home() {
+  const teamMembers = [
+    {
+      name: "Rusira Sandul",
+      role: "Team Leader",
+      subRole: "ML and Backend Developer",
+      image: "/Rusira.jpg",
+      social: {
+        github: "https://github.com/rusirasandul",
+        linkedin: "https://www.linkedin.com/in/rusira-sandul-b6bb87292/",
+        instagram: "https://www.instagram.com/hwrs_2249/"
+      }
+    },
+    {
+      name: "Lakindu Perera",
+      role: "Backend Developer",
+      image: "/Lakindu.jpg",
+      social: {
+        github: "https://github.com/lakindudev",
+        linkedin: "https://www.linkedin.com/in/lakindu-perera-297b752b2/",
+        instagram: "https://www.instagram.com/lakindu_x/"
+      }
+    },
+    {
+      name: "Fathima Nihla",
+      role: "Frontend Developer",
+      image: "/Nihila.jpg",
+      social: {
+        github: "https://github.com/NihlaNazim",
+        linkedin: "https://www.linkedin.com/in/nihla-nazim/",
+        instagram: "https://www.instagram.com/iamnihla._/"
+      }
+    },
+    {
+      name: "Dewmi Jayasundara",
+      role: "Frontend Developer",
+      image: "/Dewmi.jpg",
+      social: {
+        github: "https://github.com/dew27",
+        linkedin: "https://www.linkedin.com/in/dewmi-jayasundara-952906293/",
+        instagram: "https://www.instagram.com/dewmi_jayasundara27/"
+      }
+    },
+    {
+      name: "Chalitha T. Wickramasingha",
+      role: "Frontend Developer",
+      subRole: "Marketing Analyst",
+      image: "/Chalitha.jpg",
+      social: {
+        github: "https://github.com/chalitha-wickramasinghe",
+        linkedin: "https://www.linkedin.com/in/chalitha-t-wickramasingha-643101293/"
+       
+      }
+    },
+    {
+      name: "Dulsara Abeywardena",
+      role: "Backend Developer",
+      subRole: "Marketing Analyst",
+      image: "/dulsaraa.jpg",
+      social: {
+        github: "https://github.com/DulsaraAbhi",
+        linkedin: "https://www.linkedin.com/in/dulsara-yapa-abeywardena-777286297/",
+        instagram: "https://www.instagram.com/_dulsara_a_y_a_/"
+      }
+    },
+    
+  ];
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-blue-50">
-      <header className="flex flex-wrap justify-between items-center w-full p-6 bg-white shadow-md">
-        <div className="flex items-center">
-          <Image
-            src="/logo.jpeg"
-            alt="Logo"
-            width={60}
-            height={60}
-            className="rounded-full mr-3"
-          />
-          <span className="text-xl font-bold text-blue-600">LunaRest</span>
-        </div>
-        <nav className="flex space-x-6">
-        <a href="#features" className="text-black hover:text-black">
-
-            Features
-          </a>
-          <a href="#team" className="text-black hover:text-black">
-            Team
-          </a>
-          <a href="#technologies" className="text-black hover:text-black">
-            Technologies
-          </a>
-          <a href="#contact" className="text-black hover:text-black">
-            Contact Us
-          </a>
-        </nav>
-        <button className="bg-blue-600 text-white px-4 py-2 rounded transition hover:bg-blue-700 focus:ring-2 focus:ring-blue-400">
-          Get Started
-        </button>
-      </header>
-      <main className="flex flex-col items-center justify-center flex-1 text-center p-6">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="70"
-          height="70"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="blue"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9" />
-          <path d="M20 3v4" />
-          <path d="M22 5h-4" />
-        </svg>
-        <h1 className="text-5xl text-black font-bold mb-4">
-          Better Sleep for Better Grades
-        </h1>
-        <p className="text-lg text-gray-600 mb-8">
-          A comprehensive sleep quality management platform designed
-          specifically for university students. Improve your academic
-          performance through better sleep habits.
-        </p>
-        <button className="bg-blue-600 text-white px-6 py-3 rounded transition hover:bg-blue-700">
-  Start Your Sleep Journey
-</button>
-
-      </main>
-      <section id="features" className="w-full max-w-5xl p-6 text-center">
-        <h2 className="text-3xl text-black font-bold mb-4 ">Key Features</h2>
-        <p className="text-lg text-black mb-8">
-          Our platform offers comprehensive tools to help you achieve better
-          sleep.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="p-6 bg-white shadow-md rounded-lg">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="blue"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" />
-              <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z" />
-              <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4" />
-              <path d="M17.599 6.5a3 3 0 0 0 .399-1.375" />
-              <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5" />
-              <path d="M3.477 10.896a4 4 0 0 1 .585-.396" />
-              <path d="M19.938 10.5a4 4 0 0 1 .585.396" />
-              <path d="M6 18a4 4 0 0 1-1.967-.516" />
-              <path d="M19.967 17.484A4 4 0 0 1 18 18" />
-            </svg>
-            <h3 className="text-xl text-black font-semibold mb-2">
-              Sleep Quality Prediction
-            </h3>
-            <p className="text-gray-400">
-              Advanced ML algorithms predict your sleep quality based on
-              personal metrics.
-            </p>
-          </div>
-          <div className="p-6 bg-white shadow-md rounded-lg">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="blue"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
-            </svg>
-            <h3 className="text-xl text-black font-semibold mb-2">
-              Personalized Recommendations
-            </h3>
-            <p className="text-gray-400">
-              Get tailored advice from sleep experts to improve your sleep
-              habits.
-            </p>
-          </div>
-          <div className="p-6 bg-white shadow-md rounded-lg">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="blue"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <polyline points="12 6 12 12 16 14" />
-            </svg>
-            <h3 className="text-xl text-black font-semibold mb-2">
-              Sleep Journal & History
-            </h3>
-            <p className="text-gray-400">
-              Track your sleep patterns and see how they change over time.
-            </p>
-          </div>
-          <div className="p-6 bg-white shadow-md rounded-lg">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="blue"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" />
-            </svg>
-            <h3 className="text-xl text-black font-semibold mb-2">
-              Goal Setting & Progress
-            </h3>
-            <p className="text-gray-400">
-              Set sleep goals and track your progress towards better sleep
-              habits.
-            </p>
-          </div>
-          <div className="p-6 bg-white shadow-md rounded-lg">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="blue"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M3 3v16a2 2 0 0 0 2 2h16" />
-              <path d="m19 9-5 5-4-4-3 3" />
-            </svg>
-            <h3 className="text-xl text-black font-semibold mb-2">
-              Data Analytics Dashboard
-            </h3>
-            <p className="text-gray-400">
-              Visualize your sleep data and identify areas for improvement.
-            </p>
-          </div>
-          <div className="p-6 bg-white shadow-md rounded-lg">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="blue"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
-              <circle cx="12" cy="12" r="3" />
-            </svg>
-            <h3 className="text-xl text-black font-semibold mb-2">
-              Lifestyle Management
-            </h3>
-            <p className="text-gray-400">
-              Tools to help you manage your daily routine for optimal sleep.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="team" className="w-full max-w-5xl p-6 text-center">
-        <h2 className="text-3xl text-black font-bold mb-4">Our Team</h2>
-        <p className="text-lg text-gray-600 mb-8">
-          Meet the talented developers behind the Sleep Quality Platform.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="p-6 bg-white shadow-md rounded-lg text-center">
-            <Image
-              src="/Rusira.jpg"
-              alt="Team Member"
-              width={100}
-              height={100}
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold text-black">Rusira Sandul</h3>
-            <p className="text-gray-400">Team Leader</p>
-            <p className="text-gray-400">ML and Backend Developer</p>
-          </div>
-          <div className="p-6 bg-white shadow-md rounded-lg text-center">
-            <Image
-              src="/Nihila.jpg"
-              alt="Team Member"
-              width={100}
-              height={100}
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold text-black">Fathima Nihla</h3>
-            <p className="text-gray-400">Frontend Developer</p>
-          </div>
-          <div className="p-6 bg-white shadow-md rounded-lg text-center">
-            <Image
-              src="/Dewmi.jpg"
-              alt="Team Member"
-              width={100}
-              height={100}
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold text-black">
-              Dewmi Jayasundara
-            </h3>
-            <p className="text-gray-400">Frontend Developer</p>
-          </div>
-          <div className="p-6 bg-white shadow-md rounded-lg text-center">
-            <Image
-              src="/Chalitha.jpg"
-              alt="Team Member"
-              width={100}
-              height={100}
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold text-black">
-              Chalitha T. Wickramasingha
-            </h3>
-            <p className="text-gray-400">Frontend Developer and Marketing Analyst</p>
-          </div>
-          <div className="p-6 bg-white shadow-md rounded-lg text-center">
-            <Image
-              src="/dulsaraa.jpg"
-              alt="Team Member"
-              width={100}
-              height={100}
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold text-black">
-              Dulsara Abeywardena
-            </h3>
-            <p className="text-gray-400">Backend Developer and Marketing Analyst</p>
-          </div>
-          <div className="p-6 bg-white shadow-md rounded-lg text-center">
-            <Image
-              src="/Lakindu.jpg"
-              alt="Team Member"
-              width={100}
-              height={100}
-              className="mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold text-black">Lakindu Perera</h3>
-            <p className="text-gray-400">Backend Developer</p>
-          </div>
-        </div>
-      </section>
-      <section id="technologies" className="w-full max-w-5xl p-6 text-center">
-        <h2 className="text-3xl text-black font-bold mb-4">Technology Stack</h2>
-        <p className="text-lg text-gray-600 mb-8">
-          Built with modern technologies for optimal performance.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-          <div className="p-6 bg-white shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold mb-2 text-black">Frontend</h3>
-            <ul className="list-disc list-inside text-gray-400">
-              <li>React</li>
-              <li>Tailwind CSS</li>
-              <li>Chart.js</li>
-            </ul>
-          </div>
-          <div className="p-6 bg-white shadow-md rounded-lg ">
-            <h3 className="text-xl font-semibold mb-2 text-black">Backend</h3>
-            <ul className="list-disc list-inside text-gray-400">
-              <li>Spring boot</li>
-              <li>PostgreSQL</li>
-              <li>Python</li>
-            </ul>
-          </div>
-          <div className="p-6 bg-white shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold mb-2 text-black">
-              Machine Learning
-            </h3>
-            <ul className="list-disc list-inside text-gray-400">
-              <li>Python</li>
-              <li>TensorFlow</li>
-              <li>Pandas</li>
-              <li>NumPy</li>
-            </ul>
-          </div>
-          <div className="p-6 bg-white shadow-md rounded-lg">
-            <h3 className="text-xl font-semibold mb-2 text-black">APIs</h3>
-            <ul className="list-disc list-inside text-gray-400">
-              <li>Fitbit API</li>
-              <li>Sleep Cycle API</li>
-              <li>Google Calendar API</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" className="w-full max-w-5xl p-6 text-center">
-        <h2 className="text-3xl text-black font-bold mb-4">Contact Us</h2>
-        <p className="text-lg text-black mb-8">
-          We&apos;d love to hear from you! Reach out with any questions or feedback.
-        </p>
-        <form className="grid grid-cols-1 gap-6">
-  <input type="text" placeholder="Your Name" required className="p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400" />
-  <input type="email" placeholder="Your Email" required className="p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400" />
-  <textarea placeholder="Your Message" required className="p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400" rows={4}></textarea>
-  <button type="submit" className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">
-    Send Message
-  </button>
-</form>
-
-
-      </section>
-
-      <footer className="w-full bg-white p-6 mt-12 shadow-md">
+    <div className="flex flex-col min-h-screen relative">
+      {/* Global spotlight effect */}
+      <GlobalSpotlight />
       
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="text-gray-600">
-            © 2025 Team LunaRest. All rights reserved.
+      {/* Navbar */}
+      <Navbar />
+      
+      {/* Hero Section */}
+      <HeroSection />
+      
+      {/* Key Features */}
+      <KeyFeatures />
+      
+      {/* How It Works Section */}
+      <Section id="how-it-works" className="py-20 bg-secondary/30">
+        <div className="center-text mb-16">
+          <span className="text-sm font-medium text-primary uppercase tracking-wider">
+            Process
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
+            How <GradientText>LunaRest</GradientText> Works
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Our platform uses advanced technology to help you improve your sleep and academic performance.
           </p>
-          <p className="text-gray-600">Developed by LunaRest Group.</p>
         </div>
-      </footer>
+        
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-primary/20 rounded-full"></div>
+            
+            {/* Timeline items */}
+            {[
+              {
+                title: "Track Your Sleep",
+                description: "Use our app to track your sleep patterns and habits.",
+                icon: "📱",
+              },
+              {
+                title: "Get Insights",
+                description: "Our AI analyzes your data and provides personalized insights.",
+                icon: "🧠",
+              },
+              {
+                title: "Follow Recommendations",
+                description: "Implement our tailored recommendations to improve your sleep.",
+                icon: "✅",
+              },
+              {
+                title: "Monitor Progress",
+                description: "Track your progress and see how your sleep quality improves over time.",
+                icon: "📈",
+              },
+            ].map((item, index) => (
+              <div key={index} className="relative z-10 mb-12">
+                <div className={`flex items-center ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"} gap-8`}>
+                  <div className="w-1/2 text-center md:text-left">
+                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                    <p className="text-muted-foreground">{item.description}</p>
+                  </div>
+                  <div className="relative">
+                    <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-2xl">
+                      {item.icon}
+                    </div>
+                  </div>
+                  <div className="w-1/2"></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Section>
+      
+      {/* Team Section */}
+      <Section id="team" className="py-20">
+        <div className="center-text mb-16">
+          <span className="text-sm font-medium text-primary uppercase tracking-wider">
+            Our Team
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
+            Meet the <GradientText>Brilliant Minds</GradientText> Behind LunaRest
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Our diverse team of experts is dedicated to improving sleep quality and academic performance.
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+          {teamMembers.map((member, index) => (
+            <TeamMemberCard
+              key={index}
+              name={member.name}
+              role={member.role}
+              subRole={member.subRole}
+              image={member.image}
+              social={member.social}
+              delay={index * 0.1}
+            />
+          ))}
+        </div>
+      </Section>
+
+      {/* Contact Section */}
+      <ContactSection />
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
