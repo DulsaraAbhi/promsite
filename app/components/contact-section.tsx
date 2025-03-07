@@ -69,7 +69,7 @@ export function ContactSection() {
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Have questions about LunaRest? We're here to help. Reach out to us and we'll get back to you as soon as possible.
+          Have questions about LunaRest? We&apos;re here to help. Reach out to us and we&apos;ll get back to you as soon as possible.
         </motion.p>
       </div>
 
@@ -87,7 +87,7 @@ export function ContactSection() {
               
               {isSubmitted ? (
                 <div className="bg-primary/10 text-primary p-4 rounded-md mb-4">
-                  Thank you for your message! We'll get back to you soon.
+                  Thank you for your message! We&apos;ll get back to you soon.
                 </div>
               ) : null}
               

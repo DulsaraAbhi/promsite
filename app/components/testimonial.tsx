@@ -35,7 +35,7 @@ export function Testimonial({
             className="object-cover"
           />
         </div>
-        <p className="text-card-foreground mb-4 italic">"{quote}"</p>
+        <p className="text-card-foreground mb-4 italic">&quot;{quote}&quot;</p>
         <div>
           <h4 className="font-semibold">{author}</h4>
           <p className="text-sm text-muted-foreground">{role}</p>
@@ -43,4 +43,4 @@ export function Testimonial({
       </div>
     </motion.div>
   );
-} 
+}
