@@ -180,7 +180,7 @@ export function TeamMemberCard({
             }}
             transition={{ duration: 0.3 }}
           >
-            Passionate about creating innovative solutions that improve people's lives through technology.
+            Passionate about creating innovative solutions that improve people&apos;s lives through technology.
           </motion.p>
         </motion.div>
       </div>

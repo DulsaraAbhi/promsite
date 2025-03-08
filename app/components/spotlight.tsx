@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 interface SpotlightProps {
@@ -43,4 +43,4 @@ export function Spotlight({ children, className = "" }: SpotlightProps) {
       {children}
     </motion.div>
   );
-} 
+}
